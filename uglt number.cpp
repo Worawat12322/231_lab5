@@ -27,6 +27,6 @@ int main(){
 		}
 	}
 }
-	printf("%d",ans[n-1]);
+	printf("%d",ans[n]);
 	return 0;
 }
