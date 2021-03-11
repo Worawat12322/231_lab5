@@ -1,4 +1,11 @@
 #include<stdio.h>
+int check(int *a){
+	while(*a%2!=1)
+	{
+		*a-=1;
+	}
+	return *a;
+}
 int main(){
 	int n;
 	scanf("%d",&n);
@@ -6,10 +13,4 @@ int main(){
 	printf("%d",n);
 	return 0;
 }
-int check(int *a){
-	while(*a%2!=1)
-	{
-		*a--;
-	}
-	return *a;
-}
+
