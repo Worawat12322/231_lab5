@@ -10,9 +10,10 @@ int main(){
 	
 	for(i=2;i<=n;i++)
 	{
-		test=ans[i-1]+1;
+		test=ans[i-1];
 		while(1)
 		{
+			test++;
 			if(test%2==0)
 			{
 				ans[i]=test;
@@ -23,10 +24,9 @@ int main(){
 				ans[i]=test;
 				break;
 			}
-			test++;
 		}
 	}
 }
-	printf("%d",ans[])
+	printf("%d",ans[n-1]);
 	return 0;
 }
