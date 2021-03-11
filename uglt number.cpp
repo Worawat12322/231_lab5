@@ -8,31 +8,25 @@ int main(){
 	}
 	else {
 	
-	for(i=1;i<=n;i++)
+	for(i=2;i<=n;i++)
 	{
-		test=ans[i-1];
+		test=ans[i-1]+1;
 		while(1)
 		{
-			test++;
-			if(test%7!=0&&test%7!=0&&test%13!=0&&test%11!=0)
 			if(test%2==0)
 			{
-				
-					ans[i]=test;
-					break;
+				ans[i]=test;
+				break;
 			}
 			else if(test%3==0||test%5==0)
 			{
 				ans[i]=test;
 				break;
 			}
+			test++;
 		}
 	}
 }
-	for(i=0;i<n;i++)
-	{
-		printf("%d ",ans[i]);
-	}
-	
+	printf("%d",ans[n-1]);
 	return 0;
 }
