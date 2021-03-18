@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	int n,x,i,j,cout=0;
+	int n,x,i,j,k,cout=0;
 	scanf("%d",&n);
 	if(n%2==0)
 	{
@@ -9,7 +9,7 @@ int main(){
 	else x=n;
 	for(i=1;i<=(n+1)/2;i++,cout++)
 	{
-		if(i==1)
+		if(i==1||i==n)
 		{
 			for(j=1;j<=x/2;j++)
 			{
@@ -24,16 +24,7 @@ int main(){
 		}
 		else for(j=1;j<=x;j++)
 		{
-			if(j==((x+1)/2)-cout)
-			{
-				printf("*");
-			}
-			else printf("_");
-			if(j==((x+1)/2)+cout)
-			{
-				printf("*");
-			}
-			else printf("_");
+			for(k=1;k<=(x+1)/2;k++)
 		}
 		printf("\n");	
 	}
